@@ -1,0 +1,21 @@
+@import "../css/reset.css";
+@import "../css/log_in.css";
+@import "../css/header.css";
+@import "../css/start_page.css";
+@import "../css/footer.css";
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 1080px;
+  background: url("C:/Users/LEESANGMIN_A1/Documents/GitHub/veradi_automation/veradi_automation/Veradi_Webpage/resource/abstract-technology-particle-background.jpg");
+  background-size: cover;
+}
