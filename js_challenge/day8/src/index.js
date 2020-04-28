@@ -30,7 +30,7 @@ const saveToDos = () => {
 
 const handleDelete = (e) => {
     const value = e.target.previousElementSibling.innerText;
-    toDo_LS.splice(toDo_LS.findIndex(x => x.text === value));
+    toDo_LS.splice(toDo_LS.findIndex(x => x.text === value), 1);
     e.target.parentElement.remove();
     saveToDos();
 };
