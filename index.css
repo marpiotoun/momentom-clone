@@ -37,6 +37,17 @@ form > h1 {
 .hide {
 	display: none;
 }
+.js-greeting > input,
+.js-toDoForm > input {
+	margin: 2rem;
+	width: 30rem;
+	height: 4rem;
+	outline-style: none;
+	border: 1px solid #999;
+	border-radius: 1rem;
+	text-indent: 1rem;
+	font-size: 1.5rem;
+}
 .js-toDoForm > input {
 	margin: 2rem;
 	display: block;

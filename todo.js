@@ -57,8 +57,10 @@ function paintToDo(text) {
 function handleSubmit() {
     event.preventDefault();
     const currentValue = toDoInput.value;
-    paintToDo(currentValue);
-    toDoInput.value = '';
+    if (currentValue !== '') {
+        paintToDo(currentValue);
+        toDoInput.value = '';
+    }
 }
 
 init();
