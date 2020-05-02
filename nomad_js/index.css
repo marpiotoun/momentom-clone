@@ -1,41 +1,75 @@
+@keyframes loadBgimg {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
 body {
-  background-color: #334444;
+	height: 100vh;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	animation: loadBgimg 0.3s linear;
+}
+.js-title {
+	font-size: 100px;
+	padding: 10px;
+	margin: 0;
 }
 form > h1 {
-  display: none;
-  color: #334444;
-  transition: 1s color ease-in-out;
-}
-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  /* padding: 0 5px 5px 5px; */
-  margin-right: 10px;
-  color: red;
-}
-.show {
-  display: block;
-}
-.hide {
-  display: none;
+	display: none;
+	color: #334444;
+	transition: 1s color ease-in-out;
+	font-size: 50px;
+	padding-bottom: 10px;
+	margin: 0;
 }
 
-@keyframes loadBgimg {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.show {
+	display: block;
 }
-.bgImg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  width: 100%;
-  height: 1000px;
-  z-index: -1;
-  animation: loadBgimg 0.3s linear;
+.hide {
+	display: none;
+}
+.js-toDoForm > input {
+	margin: 2rem;
+	display: block;
+	width: 30rem;
+	height: 4rem;
+	outline-style: none;
+	border: 1px solid #999;
+	border-radius: 1rem;
+	text-indent: 1rem;
+	font-size: 1.5rem;
+}
+.js-toDoList > li {
+	font-size: 2rem;
+	width: 30rem;
+	display: flex;
+	list-style: none;
+}
+.js-toDoList > li > span {
+	transform: translateY(-0.5rem);
+}
+.delBtn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 5px 5px 5px;
+	margin-right: 10px;
+	opacity: 0;
+}
+.js-toDoList > li:hover > .delBtn {
+	opacity: 1;
+	color: rgb(105, 105, 105);
+}
+.js-toDoList > li:hover > .delBtn:hover {
+	opacity: 1;
+	color: rgb(236, 99, 99);
 }

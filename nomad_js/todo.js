@@ -37,8 +37,8 @@ function handleDelClicked(event) {
 }
 function paintToDo(text) {
     const li = document.createElement('li');
-    const delBtn = document.createElement("button");
-    delBtn.innerText = `X`;
+    const delBtn = document.createElement("i");
+    delBtn.className = "far fa-square delBtn";
     delBtn.addEventListener('click', handleDelClicked);
     const span = document.createElement("span");
     span.innerText = text;
